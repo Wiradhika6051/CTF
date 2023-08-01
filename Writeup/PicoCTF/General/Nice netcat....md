@@ -10,13 +10,6 @@ Artifact Files:
 -
 
 ### Approach
-
-ngide:
-connect pake webshell ke alamat
-dapet list angka random
-keknya ASCII, mari kita convert
-bener ternyata
-
 **1. Connect to the server**
 Karena posisiku lagi di device windows tanpa wsl, maka challenge ini kukerjakan via webshell di web PicoCTF. Cara mengaksesnya sudah dijelaskan di writeup [Wave a flag](Wave%20a%20flag.md). 
 
