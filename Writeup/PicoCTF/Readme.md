@@ -7,3 +7,5 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [Python Wrangling](General/Python%20Wrangling.md)
 - Cryptography
   - [X] [Mod 26](Crypthography/Mod%2026.md)
+- Web Exploitation
+  - [X] [GET aHEAD](Web%20Exploitation/GET%20aHEAD.md)
