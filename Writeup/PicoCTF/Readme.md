@@ -13,6 +13,7 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [GET aHEAD](Web%20Exploitation/GET%20aHEAD.md)
   - [X] [Inspect HTML](Web%20Exploitation/Inspect%20HTML.md)
   - [X] [Insp3ct0r](Web%20Exploitation/Insp3ct0r.md)
+  - [X] [Cookies](Web%20Exploitation/Cookies.md)
 - Forensics
   - [X] [information](Forensics/information.md)
 - Reverse Engineering
