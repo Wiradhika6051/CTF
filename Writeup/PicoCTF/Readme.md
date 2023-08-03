@@ -7,6 +7,7 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [Python Wrangling](General/Python%20Wrangling.md)
   - [X] [Wave a flag](General/Wave%20a%20flag.md)
   - [X] [Nice netcat...](General/Nice%20netcat....md)
+  - [X] [Static ain't always noise](General/Static%20ain't%20always%20noise.md)
 - Cryptography
   - [X] [Mod 26](Crypthography/Mod%2026.md)
 - Web Exploitation
