@@ -1,7 +1,9 @@
 ## Challenge Name: Obedient Cat
-Category: General
-Points: 5
-Solves: 190k+
+>Category: General
+
+>Points: 5
+
+>Solves: 190k+
 
 Challenge Description: 
 This file has a flag in plain sight (aka "in-the-clear").

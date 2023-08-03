@@ -1,7 +1,9 @@
 ## Challenge Name: Static ain't always noise
-Category: General
-Points: 20
-Solves: 55k+
+>Category: General
+
+>Points: 20
+
+>Solves: 55k+
 
 Challenge Description: 
 Can you look at the data in this binary: [static](https://mercury.picoctf.net/static/7495259e963bd5b67d0fb8b616652618/static)? This [BASH script](https://mercury.picoctf.net/static/7495259e963bd5b67d0fb8b616652618/ltdis.sh) might help!

@@ -1,7 +1,9 @@
 ## Challenge Name: Nice netcat...
-Category: General
-Points: 15
-Solves: 93k+
+>Category: General
+
+>Points: 15
+
+>Solves: 93k+
 
 Challenge Description: 
 There is a nice program that you can talk to by using this command in a shell: ```$ nc mercury.picoctf.net 35652```, but it doesn't speak English...

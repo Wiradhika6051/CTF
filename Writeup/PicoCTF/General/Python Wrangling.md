@@ -1,7 +1,9 @@
 ## Challenge Name: Python Wrangling
-Category: General
-Points: 10
-Solves: 99k+
+>Category: General
+
+>Points: 10
+
+>Solves: 99k+
 
 Challenge Description: 
 Python scripts are invoked kind of like programs in the Terminal... Can you run 

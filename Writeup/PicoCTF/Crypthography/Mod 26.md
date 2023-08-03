@@ -1,7 +1,9 @@
 ## Challenge Name: Mod 26
-Category: Cryptography
-Points: 10
-Solves: 159k+
+> Category: Cryptography
+
+> Points: 10
+
+> Solves: 159k+
 
 Challenge Description: 
 Cryptography can be easy, do you know what ROT13 is? 

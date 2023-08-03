@@ -1,7 +1,9 @@
 ## Challenge Name: Wave a Flag
-Category: General
-Points: 10
-Solves: 114k+
+>Category: General
+
+>Points: 10
+
+>Solves: 114k+
 
 Challenge Description: 
 Can you invoke help flags for a tool or binary? 
