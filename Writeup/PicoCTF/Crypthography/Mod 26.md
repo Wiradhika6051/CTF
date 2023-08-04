@@ -25,7 +25,7 @@ Sudah banyak decoder ROT13 online. Kita bisa langsung pakai saja.
 Contoh [website](https://cryptii.com/pipes/rot13-decoder)
 
 Salin cipher ke kolom ciphertext dan didapatkan flagnya
-![flag](Mod%20_26-1.JPG)
+![flag](Mod%20_26-1.jpg)
 
 The flag is:
 ```
