@@ -31,9 +31,9 @@ Hanya file JPEG biasa tanpa hal yang SUS (mencurigakan).
 **2. Analisis Metadata**
 
 Karena di filenya tidak ada hal yang mencurigakan dan soal ini poinnya rendah, kemungkinan bukan tentang stegano aneh aneh. Berarti target selanjutnya adalah metadata. Di hint 1 juga dikasih petunjuk buat cek metadata. Berhubung lagi di Windows, mari kita buka metadata nya lewat file detail. Caranya dengan klik kanan file -> Properties -> Details.
-![file detail](information-2.JPG)
-![file detail 2](information-3.JPG)
-![file detail 3](information-4.JPG)
+![file detail](information-2.jpg)
+![file detail 2](information-3.jpg)
+![file detail 3](information-4.jpg)
 
 Dari metadata ini tidak ada hal yang aneh. Namun perlu diingat metadata di details ini tidak semuanya ditampilkan dan masih ada yang tersembunyi.
 
@@ -81,22 +81,22 @@ Image Size                      : 2560x1598
 Megapixels                      : 4.1
 ```
 Dari metadata disini, ada dua properti yang menucrigakan dan terlihat seperti hex yang bisa jadi merupakan flag, yakni **Current IPTC DIgest** serta **Lisence** . Mari kita coba masukkan ke submisi. Pertama untuk **Current IPTC DIgest**:
-![attempt 1](information-5.JPG)
+![attempt 1](information-5.jpg)
 Ternyata ini bukan flagnya. Sekarang mari kita coba untuk **Lisenced**:
-![attempt 2](information-6.JPG)
+![attempt 2](information-6.jpg)
 Ternyata bukan juga :sadge:
 
 Hmm, apa hex ini perlu diconvert ya? tapi kemana? mari kita coba-coba di website [ini](https://gchq.github.io/CyberChef/)
 - **to Base64**
   - **Current IPTC DIgest**
-  ![hasil 1](information-7.JPG)
+  ![hasil 1](information-7.jpg)
   - **Lisence**
-  ![hasil 2](information-8.JPG)
+  ![hasil 2](information-8.jpg)
 - **from Base64**
   - **Current IPTC DIgest**
-  ![hasil 3](information-9.JPG)
+  ![hasil 3](information-9.jpg)
   - **Lisence**
-  ![hasil 4](information-10.JPG)
+  ![hasil 4](information-10.jpg)
 Aha, flagnya ketemu. Flagnya adalah:
 ```
 picoCTF{the_m3tadata_1s_modified}
