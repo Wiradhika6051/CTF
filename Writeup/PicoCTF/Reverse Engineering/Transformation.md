@@ -16,6 +16,7 @@ Artifact Files:
 
 ### Approach
 **1. Analisi filenya**
+
 mari kita buka file ```enc```, baik menggunakan notepad atau menggunakan command ```cat```.
 ```
 灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸弰摤捤㤷慽
@@ -24,6 +25,7 @@ Apa ini? Kok banyak Hanzi!? apa flagnya suruh tinggal translate wkwkwk..
 Eh tapi keknya enggak deh, ada Hanggeul jadi keknya flagnya bukan tinggal translate Bahasa Mandarin (:sadge:).
 
 **2. Analisis Kode**
+
 Karena ini soal reverse engineering, seperti namanya, sepertinya ada yang perlu di-reverse. Di petunjuk soal ada kode aneh, mari kita analisis.
 ```
 ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
@@ -35,6 +37,7 @@ Tunggu sebentar, ini seperti hal yang familiar. Anggap si karakter pertama 0x60 
 Tapi kok jadi unicode? Welp ternyata fungsi [chr()](https://www.w3schools.com/python/ref_func_chr.asp) emang bisa menghasilkan unicode. Jadi unicode di file tadi hasil pembentukan dua karakter dari flag. Tinggal yang diperlukan yakni mengekstrak karakter-karakter tersebut dari unicode ini.
 
 **3. Decode Characters**
+
 Untuk percobaan pertama mari tinggal kita balikkan fungsinya. Dari sintaksnya jelas ini adalah kode python bisa dilihat dari loopingnya yang menggunakan ```for i in range(0, len(flag), 2)``` .Berarti yang kita perlukan berarti tinggal shift kiri 1 byte buat dapetin karakter pertama dan AND dengan 0xff untuk mendapatkan karakter kedua. Kode nya sebagai berikut:
 ```
 with open('enc',"r") as r:
