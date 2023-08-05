@@ -11,7 +11,7 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [Tab, Tab, Attack](General/Tab,%20Tab,%20Attack.md)
 - Cryptography
   - [X] [Mod 26](Crypthography/Mod%2026.md)
-  - [] [Mind your Ps and Qs](Crypthography/Mind%20your%20Ps%20and%20Qs.md)
+  - [X] [Mind your Ps and Qs](Crypthography/Mind%20your%20Ps%20and%20Qs.md)
 - Web Exploitation
   - [X] [GET aHEAD](Web%20Exploitation/GET%20aHEAD.md)
   - [X] [Inspect HTML](Web%20Exploitation/Inspect%20HTML.md)
