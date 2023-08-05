@@ -5,7 +5,8 @@
 
 >Solves: 114k+
 
-Challenge Description: 
+### Challenge Description: 
+
 Can you invoke help flags for a tool or binary? 
 [This program](https://mercury.picoctf.net/static/cfea736820f329083dab9558c3932ada/warm) has extraordinarily helpful information...
 

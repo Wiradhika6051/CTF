@@ -19,6 +19,7 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [Cookies](Web%20Exploitation/Cookies.md)
   - [X] [Scavenger Hunt](Web%20Exploitation/Scavenger%20Hunt.md)
   - [X] [Who are you?](Web%20Exploitation/Who%20are%20you.md)
+  - [] [where are the robots](Web%20Exploitation/where%20are%20the%20robots.md)
 - Forensics
   - [X] [information](Forensics/information.md)
 - Reverse Engineering

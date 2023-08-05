@@ -5,7 +5,8 @@
 
 >Solves: 190k+
 
-Challenge Description: 
+### Challenge Description: 
+
 This file has a flag in plain sight (aka "in-the-clear").
 
 Artifact Files:
