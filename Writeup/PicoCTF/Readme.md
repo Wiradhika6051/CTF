@@ -10,6 +10,7 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [Static ain't always noise](General/Static%20ain't%20always%20noise.md)
   - [X] [Tab, Tab, Attack](General/Tab,%20Tab,%20Attack.md)
   - [X] [Magikarp Ground Mission](General/Magikarp%20Ground%20Mission.md)
+  - [X] [Lets Warm Up](General/Lets%20Warm%20Up.md)
 - Cryptography
   - [X] [Mod 26](Crypthography/Mod%2026.md)
   - [X] [Mind your Ps and Qs](Crypthography/Mind%20your%20Ps%20and%20Qs.md)
