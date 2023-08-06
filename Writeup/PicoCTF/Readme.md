@@ -25,5 +25,6 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [information](Forensics/information.md)
 - Reverse Engineering
   - [X] [Transformation](Reverse%20Engineering/Transformation.md)
+  - [X] [keygenme-py](Reverse%20Engineering/keygenme-py.md)
 - Binary Exploitation
   - [X] [Stonks](Binary%20Exploitation/Stonks.md)
