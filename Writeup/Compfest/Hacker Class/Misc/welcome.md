@@ -1,9 +1,9 @@
 ## Challenge Name: welcome
 >Category: Misc
 
->Points: 
+>Points: 100
 
->Solves: 
+>Solves: 2
 
 ### Challenge Description: 
 
