@@ -25,8 +25,12 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [logon](Web%20Exploitation/logon.md)
 - Forensics
   - [X] [information](Forensics/information.md)
+  - [X] [Matryoshka doll](Forensics/Matryoshka%20doll.md)
 - Reverse Engineering
   - [X] [Transformation](Reverse%20Engineering/Transformation.md)
   - [X] [keygenme-py](Reverse%20Engineering/keygenme-py.md)
 - Binary Exploitation
   - [X] [Stonks](Binary%20Exploitation/Stonks.md)
+
+---
+[Back to home](../../README.md)
