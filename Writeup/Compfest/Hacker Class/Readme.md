@@ -8,7 +8,8 @@ Writeups for Compfest 15 Hacker Class: [Hacker Class](https://ctf.compfest.id/)
 - Cryptography
 - Web Exploitation
   - [X] [internal web](Web%20Exploitation/internal%20web.md)
-- Forensics
+- Forensic
+  - [X] [morphgura](Forensic/morphgura.md)
 - Reverse Engineering
 - Binary Exploitation
 
