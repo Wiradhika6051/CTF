@@ -30,6 +30,7 @@ COMPFEST15{welcome_to_the_club!!!_have_fun!!!}
 ```
 
 ### Reflections
+
 Permulaan menarik untuk belajar mencari flag serta belajar fitur di Discord.
   
 
