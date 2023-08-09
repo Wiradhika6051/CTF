@@ -13,6 +13,7 @@ Writeups for Compfest 15 Hacker Class: [Hacker Class](https://ctf.compfest.id/)
   - [X] [morphgura](Forensic/morphgura.md)
   - [X] [Just Do It](Forensic/Just%20Do%20It.md)
 - Reverse Engineering
+  - [X] [Serial Key](Reverse%20Engineering/Serial%20Key.md)
 - Binary Exploitation
   - [X] [Greetify](Binary%20Exploitation/Greetify.md)
 
