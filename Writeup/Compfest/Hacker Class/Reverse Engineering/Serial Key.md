@@ -338,12 +338,281 @@ Jika serial key valid, maka serial key akan ditambahkan ke array ```serial``` se
     isValid = 1;
 ```
 
-**4. Merancang _Script_ dan Mendapatkan Flag**
+**4. Merancang _Script_**
 
+Dari informasi diatas, kita perlu membuat script yang bisa menghasilkan serial key yang memenuhi kondisi. Disarankan membuat script karena kita perlu memasukkan 100 serial key yang unik. Untuk percobaan akan kita coba di lokal dulu.
 
+```
+import pwn
+import string
+import math
+
+#jumlah iterasi
+iteration = int(input("How many iterations needed? "))
+#karakter yang valid
+CHARACTER = [str(i) for i in list(range(10))] + list(string.ascii_uppercase)
+#hubungkan ke local
+max_digit = math.ceil(math.log(iteration,len(CHARACTER)))
+with pwn.process("./soal") as c:
+   #template
+   TEMPLATE = "ABCD-EFGH-IJKL-MNOP-QRST"
+   #idx buat nandain chara yg perlu di replace
+   idx = 0
+   for i in range(iteration):
+      if(i % len(CHARACTER)==0):
+         temp = list(TEMPLATE)
+         temp[-max_digit] = CHARACTER[idx]
+         TEMPLATE = "".join(temp)
+         idx+=1
+      print(c.recvuntil("==> "))
+      payload = TEMPLATE[:-1] + CHARACTER[i%len(CHARACTER)]
+      c.sendline(payload)
+
+   # Lihat responsenya
+   response = c.recvall()
+   print(response.decode())
+```
+Kode ini akan menghasilkan payload berupa serial key dengan mengenumerasi semua kemungkinannya dari belakang dengan memodifikasi template yang ada agar setiap segmen unik. Karena ku tadi stuck, kode ini hanya berguna untuk maksimal 36*36 iterasi. Silahkan modifikasi jika ingin lebih dari itu. Sekarang kita coba di lokal.
+```
+How many iterations needed? 100
+[+] Starting local process './soal': pid 20724
+/home/anugrah-fawwaz/Documents/CTF/Writeup/Compfest/Hacker Class/Reverse Engineering/Serial Key.py:22: BytesWarning: Text is not bytes; assuming ASCII, no guarantees. See https://docs.pwntools.com/#bytes
+  print(c.recvuntil("==> "))
+b'Serial 1 ==> '
+/home/anugrah-fawwaz/Documents/CTF/Writeup/Compfest/Hacker Class/Reverse Engineering/Serial Key.py:24: BytesWarning: Text is not bytes; assuming ASCII, no guarantees. See https://docs.pwntools.com/#bytes
+  c.sendline(payload)
+b'Serial 2 ==> '
+b'Serial 3 ==> '
+b'Serial 4 ==> '
+b'Serial 5 ==> '
+b'Serial 6 ==> '
+b'Serial 7 ==> '
+b'Serial 8 ==> '
+b'Serial 9 ==> '
+b'Serial 10 ==> '
+b'Serial 11 ==> '
+b'Serial 12 ==> '
+b'Serial 13 ==> '
+b'Serial 14 ==> '
+b'Serial 15 ==> '
+b'Serial 16 ==> '
+b'Serial 17 ==> '
+b'Serial 18 ==> '
+b'Serial 19 ==> '
+b'Serial 20 ==> '
+b'Serial 21 ==> '
+b'Serial 22 ==> '
+b'Serial 23 ==> '
+b'Serial 24 ==> '
+b'Serial 25 ==> '
+b'Serial 26 ==> '
+b'Serial 27 ==> '
+b'Serial 28 ==> '
+b'Serial 29 ==> '
+b'Serial 30 ==> '
+b'Serial 31 ==> '
+b'Serial 32 ==> '
+b'Serial 33 ==> '
+b'Serial 34 ==> '
+b'Serial 35 ==> '
+b'Serial 36 ==> '
+b'Serial 37 ==> '
+b'Serial 38 ==> '
+b'Serial 39 ==> '
+b'Serial 40 ==> '
+b'Serial 41 ==> '
+b'Serial 42 ==> '
+b'Serial 43 ==> '
+b'Serial 44 ==> '
+b'Serial 45 ==> '
+b'Serial 46 ==> '
+b'Serial 47 ==> '
+b'Serial 48 ==> '
+b'Serial 49 ==> '
+b'Serial 50 ==> '
+b'Serial 51 ==> '
+b'Serial 52 ==> '
+b'Serial 53 ==> '
+b'Serial 54 ==> '
+b'Serial 55 ==> '
+b'Serial 56 ==> '
+b'Serial 57 ==> '
+b'Serial 58 ==> '
+b'Serial 59 ==> '
+b'Serial 60 ==> '
+b'Serial 61 ==> '
+b'Serial 62 ==> '
+b'Serial 63 ==> '
+b'Serial 64 ==> '
+b'Serial 65 ==> '
+b'Serial 66 ==> '
+b'Serial 67 ==> '
+b'Serial 68 ==> '
+b'Serial 69 ==> '
+b'Serial 70 ==> '
+b'Serial 71 ==> '
+b'Serial 72 ==> '
+b'Serial 73 ==> '
+b'Serial 74 ==> '
+b'Serial 75 ==> '
+b'Serial 76 ==> '
+b'Serial 77 ==> '
+b'Serial 78 ==> '
+b'Serial 79 ==> '
+b'Serial 80 ==> '
+b'Serial 81 ==> '
+b'Serial 82 ==> '
+b'Serial 83 ==> '
+b'Serial 84 ==> '
+b'Serial 85 ==> '
+b'Serial 86 ==> '
+b'Serial 87 ==> '
+b'Serial 88 ==> '
+b'Serial 89 ==> '
+b'Serial 90 ==> '
+b'Serial 91 ==> '
+b'Serial 92 ==> '
+b'Serial 93 ==> '
+b'Serial 94 ==> '
+b'Serial 95 ==> '
+b'Serial 96 ==> '
+b'Serial 97 ==> '
+b'Serial 98 ==> '
+b'Serial 99 ==> '
+b'Serial 100 ==> '
+[+] Receiving all data: Done (0B)
+[*] Process './soal' stopped with exit code -11 (SIGSEGV) (pid 20724)
+```
+Terlihat di bagian akhir terkena SIGSEV (Segmentation Fault). Hal ini berarti semua input kita benar namun karena di local tidak ada file flagnya, maka akan terkena **Segmentation Fault** ketika hendak membaca isi filenya.
+
+**5. Mendapatkan Flag**
+
+Sekarang untuk mendapatkan flagnya, tinggal ganti koneksi dari local ke remote seperti berikut:
+```
+with pwn.remote("34.101.174.85",10003) as c:
+   #template
+   TEMPLATE = "ABCD-EFGH-IJKL-MNOP-QRST"
+   ...
+```
+Lalu jalankan ulang.
+```
+How many iterations needed? 100
+[+] Opening connection to 34.101.174.85 on port 10003: Done
+/home/anugrah-fawwaz/Documents/CTF/Writeup/Compfest/Hacker Class/Reverse Engineering/Serial Key.py:22: BytesWarning: Text is not bytes; assuming ASCII, no guarantees. See https://docs.pwntools.com/#bytes
+  print(c.recvuntil("==> "))
+b'Serial 1 ==> '
+/home/anugrah-fawwaz/Documents/CTF/Writeup/Compfest/Hacker Class/Reverse Engineering/Serial Key.py:24: BytesWarning: Text is not bytes; assuming ASCII, no guarantees. See https://docs.pwntools.com/#bytes
+  c.sendline(payload)
+b'Serial 2 ==> '
+b'Serial 3 ==> '
+b'Serial 4 ==> '
+b'Serial 5 ==> '
+b'Serial 6 ==> '
+b'Serial 7 ==> '
+b'Serial 8 ==> '
+b'Serial 9 ==> '
+b'Serial 10 ==> '
+b'Serial 11 ==> '
+b'Serial 12 ==> '
+b'Serial 13 ==> '
+b'Serial 14 ==> '
+b'Serial 15 ==> '
+b'Serial 16 ==> '
+b'Serial 17 ==> '
+b'Serial 18 ==> '
+b'Serial 19 ==> '
+b'Serial 20 ==> '
+b'Serial 21 ==> '
+b'Serial 22 ==> '
+b'Serial 23 ==> '
+b'Serial 24 ==> '
+b'Serial 25 ==> '
+b'Serial 26 ==> '
+b'Serial 27 ==> '
+b'Serial 28 ==> '
+b'Serial 29 ==> '
+b'Serial 30 ==> '
+b'Serial 31 ==> '
+b'Serial 32 ==> '
+b'Serial 33 ==> '
+b'Serial 34 ==> '
+b'Serial 35 ==> '
+b'Serial 36 ==> '
+b'Serial 37 ==> '
+b'Serial 38 ==> '
+b'Serial 39 ==> '
+b'Serial 40 ==> '
+b'Serial 41 ==> '
+b'Serial 42 ==> '
+b'Serial 43 ==> '
+b'Serial 44 ==> '
+b'Serial 45 ==> '
+b'Serial 46 ==> '
+b'Serial 47 ==> '
+b'Serial 48 ==> '
+b'Serial 49 ==> '
+b'Serial 50 ==> '
+b'Serial 51 ==> '
+b'Serial 52 ==> '
+b'Serial 53 ==> '
+b'Serial 54 ==> '
+b'Serial 55 ==> '
+b'Serial 56 ==> '
+b'Serial 57 ==> '
+b'Serial 58 ==> '
+b'Serial 59 ==> '
+b'Serial 60 ==> '
+b'Serial 61 ==> '
+b'Serial 62 ==> '
+b'Serial 63 ==> '
+b'Serial 64 ==> '
+b'Serial 65 ==> '
+b'Serial 66 ==> '
+b'Serial 67 ==> '
+b'Serial 68 ==> '
+b'Serial 69 ==> '
+b'Serial 70 ==> '
+b'Serial 71 ==> '
+b'Serial 72 ==> '
+b'Serial 73 ==> '
+b'Serial 74 ==> '
+b'Serial 75 ==> '
+b'Serial 76 ==> '
+b'Serial 77 ==> '
+b'Serial 78 ==> '
+b'Serial 79 ==> '
+b'Serial 80 ==> '
+b'Serial 81 ==> '
+b'Serial 82 ==> '
+b'Serial 83 ==> '
+b'Serial 84 ==> '
+b'Serial 85 ==> '
+b'Serial 86 ==> '
+b'Serial 87 ==> '
+b'Serial 88 ==> '
+b'Serial 89 ==> '
+b'Serial 90 ==> '
+b'Serial 91 ==> '
+b'Serial 92 ==> '
+b'Serial 93 ==> '
+b'Serial 94 ==> '
+b'Serial 95 ==> '
+b'Serial 96 ==> '
+b'Serial 97 ==> '
+b'Serial 98 ==> '
+b'Serial 99 ==> '
+b'Serial 100 ==> '
+[+] Receiving all data: Done (76B)
+[*] Closed connection to 34.101.174.85 port 10003
+COMPFEST15{5dd5379b88eca074ac6e9f794cc9f8af7a67609269dfa0aa38f2d30b8e103634}
+```
+Alhamdulillah dapat flagnya. Flagnya adalah:
+```
+COMPFEST15{5dd5379b88eca074ac6e9f794cc9f8af7a67609269dfa0aa38f2d30b8e103634}
+```
 ### Reflections
 
-Permulaan menarik untuk 
+Permulaan menarik untuk belajar disassembling dan decompiling binary. Selain itu, mengasah skill ```pwntools``` dan ```gdb```.
   
 ---
 [Back to home](../Readme.md)
