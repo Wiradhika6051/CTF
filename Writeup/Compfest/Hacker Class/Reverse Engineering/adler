@@ -1,18 +1,25 @@
-enc = [];
-holder1 = [];
-holder2 = [];
-fl4g.split("").map((x, y) => {
-  !y
-    ? (holder1[y] = x.charCodeAt(0) + 1)
-    : (holder1[y] = (x.charCodeAt(0) + holder1[y - 1]) % ((2 ** 9) << 16));
+const fl4g = "TEST"
+const enc = [];
+const holder1 = [];
+const holder2 = [];
+fl4g.split("").map((x, y) => { //x --> value, y-->index
+  !y //apakah indexnya 0?
+    ? (holder1[y] = x.charCodeAt(0) + 1) //jika index==0
+    : (holder1[y] = (x.charCodeAt(0) + holder1[y - 1]) % ((2 ** 9) << 16)); //jika selain 0. (2 ** 9) << 16= 33554432
 });
-holder1.map((zZ, hh) => {
-  !hh
-    ? (holder2[hh] = holder1[hh])
-    : (holder2[hh] = (zZ + holder1[hh - 1]) % ((2 ** 9) << 8));
+
+//holder1 = [85,154,237,322]
+holder1.map((zZ, hh) => {//zZ -> value, hh->index
+  !hh //apakah indeksnya 0?
+    ? (holder2[hh] = holder1[hh]) // jika 0
+    : (holder2[hh] = (zZ + holder1[hh - 1]) % ((2 ** 9) << 8)); //jika bukan 0, (2 ** 9) << 8= 131072
 });
+//holder2 = [85,239,476,798]
 enc = holder1.concat(holder2);
-enc.map((wkwk, zz) => {
+//enc = [85,154,237,322, 85,239,476,798]
+enc.map((wkwk, zz) => { //wkwk -> value, zz -> index
   enc[zz] = String.fromCharCode(wkwk);
 });
+//enc = ['U', '\x9A', 'í', 'ł', 'U', 'ï', 'ǜ', '̞']
 enc = enc.join("");
+//enc = 'U\x9AíłUïǜ̞'
