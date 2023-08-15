@@ -4,7 +4,6 @@ Writeups for Compfest 15 Hacker Class: [Hacker Class](https://ctf.compfest.id/)
 ## Categories
 - Misc
   - [X] [welcome](Misc/welcome.md)
-
 - Cryptography
   - [X] [Rivest Shamir Adleman](Cryptography/Rivest%20Shamir%20Adleman.md)
 - Web Exploitation
@@ -18,6 +17,7 @@ Writeups for Compfest 15 Hacker Class: [Hacker Class](https://ctf.compfest.id/)
   - [X] [baby JaSon adler](Reverse%20Engineering/baby%20JaSon%20adler.md)
 - Binary Exploitation
   - [X] [Greetify](Binary%20Exploitation/Greetify.md)
+  - [X] [canary2win](Binary%20Exploitation/canary2win.md)
 
 ---
 [Back to home](../../../README.md)
