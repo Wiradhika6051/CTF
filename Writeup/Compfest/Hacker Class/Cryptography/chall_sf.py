@@ -6,7 +6,8 @@ from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad
 # from secret import FLAG
 
-FLAG = b"COMPFEST{flag_g00d_fwf32}"
+FLAG  = b"COMPFEST{flag_g00d_fwf32egetrhtrhrthrhtjrthrthtrhrh}"
+
 
 IV = os.urandom(AES.block_size)
 KEY = os.urandom(AES.block_size)

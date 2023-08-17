@@ -6,7 +6,7 @@ Writeups for Compfest 15 Hacker Class: [Hacker Class](https://ctf.compfest.id/)
   - [X] [welcome](Misc/welcome.md)
 - Cryptography
   - [X] [Rivest Shamir Adleman](Cryptography/Rivest%20Shamir%20Adleman.md)
-  - [] [Seems Familiar](Cryptography/Seems%20Familiar.md)
+  - [X] [Seems Familiar](Cryptography/Seems%20Familiar.md)
 - Web Exploitation
   - [X] [internal web](Web%20Exploitation/internal%20web.md)
   - [X] [best64](Web%20Exploitation/best64.md)
