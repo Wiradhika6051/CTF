@@ -16,6 +16,7 @@ Writeups for Compfest 15 Hacker Class: [Hacker Class](https://ctf.compfest.id/)
 - Reverse Engineering
   - [X] [Serial Key](Reverse%20Engineering/Serial%20Key.md)
   - [X] [baby JaSon adler](Reverse%20Engineering/baby%20JaSon%20adler.md)
+  - [X] [Imported](Reverse%20Engineering/Imported.md)
 - Binary Exploitation
   - [X] [Greetify](Binary%20Exploitation/Greetify.md)
   - [X] [canary2win](Binary%20Exploitation/canary2win.md)
