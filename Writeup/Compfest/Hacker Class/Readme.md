@@ -15,6 +15,7 @@ Writeups for Compfest 15 Hacker Class: [Hacker Class](https://ctf.compfest.id/)
 - Forensic
   - [X] [morphgura](Forensic/morphgura.md)
   - [X] [Just Do It](Forensic/Just%20Do%20It.md)
+  - [X] [Intro to SysAdmin](Forensic/Intro%20to%20SysAdmin.md)
 - Reverse Engineering
   - [X] [Serial Key](Reverse%20Engineering/Serial%20Key.md)
   - [X] [baby JaSon adler](Reverse%20Engineering/baby%20JaSon%20adler.md)
