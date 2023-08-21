@@ -52,35 +52,6 @@ Artifact Files:
 
 ### Approach
 
-
-cek log di /etc/log/postgresql
-
-ternyata harus masuk
-
-nyalain psql pake:
-```service psql start```
-
-gak bisa masuk
-
-ke /etc/postgres ubah pg_hba.conf pake
-
-cat -> pg_hba.conf
-
-ubah method jadi trust
-
-masuk pake
-psql -U postgres
-
-lihat database pake \lt
-
-ke app pake \c app
-
-lihat table pake \dt
-
-select * from logs where message like 'COMPFEST*'; kek di log
-
-dapat flag nya
-
 **1. Access Virtual Kernel**
 
 Untuk mengaksesnya tinggal ikuti saja langkah di deskripsi. Namun ingat kita perlu melakukannya dengan akses root. Untuk mengakses root shell masukkan command berikut:
