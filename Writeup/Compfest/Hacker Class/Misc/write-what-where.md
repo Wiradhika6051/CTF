@@ -80,6 +80,10 @@ Alhamdulillah dapat _flag_-nya:
 COMPFEST15{M3nGas4h_sK1LL_DuKuN_g3s}
 ```
 
+**EXTRA**
+
+Special thanks for this [writeup](https://ctftime.org/writeup/25802) by **ryan-cd** from team **meraxes** for giving inspiration about how this challenge could be done.
+
 ### Reflections
 
 Permulaan menarik untuk belajar mengenai fitur di UNIX Shell, belajar tentang ```stdout``` dan ```stderr```, redirect output ke file lain, serta belajar command baru semacam ```source```.
