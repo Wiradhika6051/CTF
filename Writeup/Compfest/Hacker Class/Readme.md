@@ -9,6 +9,7 @@ Writeups for Compfest 15 Hacker Class: [Hacker Class](https://ctf.compfest.id/)
   - [X] [Rivest Shamir Adleman](Cryptography/Rivest%20Shamir%20Adleman.md)
   - [X] [Seems Familiar](Cryptography/Seems%20Familiar.md)
   - [] [Alin tapi Integer](Cryptography/Alin%20tapi%20Integer.md)
+  - [] [Satu Lagi Nih](Cryptography/Satu%20Lagi%20Nih.md)
 - Web Exploitation
   - [X] [internal web](Web%20Exploitation/internal%20web.md)
   - [X] [best64](Web%20Exploitation/best64.md)
@@ -28,6 +29,8 @@ Writeups for Compfest 15 Hacker Class: [Hacker Class](https://ctf.compfest.id/)
   - [X] [Greetify](Binary%20Exploitation/Greetify.md)
   - [X] [canary2win](Binary%20Exploitation/canary2win.md)
   - [] [Let's jump](Binary%20Exploitation/Let's%20jump.md)
+  - [] [ret2libc](Binary%20Exploitation/ret2libc.md)
+  - [] [ret2lib--c? i don't c it..](Binary%20Exploitation/ret2libc%20i%20don't%20c%20it...md)
 
 ---
 [Back to home](../../../README.md)
