@@ -1,0 +1,272 @@
+store Hello!
+left 6
+print
+store Give me your secret!
+left 20
+print
+right 1
+input
+left 65
+right 18
+push
+left 16
+push
+right 49
+push
+left 15
+push
+right 12
+push
+left 16
+push
+left 25
+push
+right 53
+push
+left 7
+push
+left 20
+push
+left 23
+push
+right 5
+push
+right 42
+push
+left 46
+push
+right 16
+push
+left 5
+push
+right 4
+push
+right 24
+push
+left 38
+push
+right 16
+push
+right 9
+push
+right 25
+push
+left 24
+push
+right 17
+push
+left 16
+push
+right 25
+push
+left 47
+push
+right 7
+push
+right 17
+push
+right 1
+push
+left 21
+push
+right 33
+push
+left 29
+push
+left 6
+push
+right 24
+push
+right 15
+push
+left 9
+push
+left 18
+push
+left 30
+push
+right 3
+push
+right 25
+push
+left 29
+push
+right 16
+push
+right 4
+push
+right 36
+push
+left 16
+push
+left 6
+push
+right 12
+push
+left 33
+push
+left 7
+push
+right 53
+push
+left 29
+push
+right 5
+push
+left 27
+push
+right 6
+push
+right 30
+push
+left 41
+push
+right 60
+push
+left 11
+push
+left 5
+push
+left 2
+push
+left 36
+push
+left 4
+push
+right 56
+push
+left 38
+push
+popeq d
+quit
+popeq N
+quit
+popeq e
+quit
+popeq C
+quit
+popeq 3
+quit
+popeq l
+quit
+popeq 4
+quit
+popeq w
+quit
+popeq w
+quit
+popeq r
+quit
+popeq E
+quit
+popeq ~
+quit
+popeq e
+quit
+popeq t
+quit
+popeq _
+quit
+popeq o
+quit
+popeq F
+quit
+popeq a
+quit
+popeq d
+quit
+popeq _
+quit
+popeq y
+quit
+popeq r
+quit
+popeq T
+quit
+popeq m
+quit
+popeq y
+quit
+popeq m
+quit
+popeq e
+quit
+popeq 3
+quit
+popeq y
+quit
+popeq u
+quit
+popeq _
+quit
+popeq {
+quit
+popeq n
+quit
+popeq d
+quit
+popeq 3
+quit
+popeq 3
+quit
+popeq b
+quit
+popeq 1
+quit
+popeq 1
+quit
+popeq }
+quit
+popeq n
+quit
+popeq _
+quit
+popeq 4
+quit
+popeq o
+quit
+popeq c
+quit
+popeq b
+quit
+popeq P
+quit
+popeq _
+quit
+popeq g
+quit
+popeq A
+quit
+popeq _
+quit
+popeq M
+quit
+popeq 0
+quit
+popeq S
+quit
+popeq O
+quit
+popeq 0
+quit
+popeq r
+quit
+popeq k
+quit
+popeq w
+quit
+popeq C
+quit
+popeq l
+quit
+popeq _
+quit
+popeq H
+quit
+popeq o
+quit
+popeq 5
+quit
+store Thanks!
+left 7
+print
