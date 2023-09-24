@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  patching:
+    restart: always
+    build:
+      context: .
+    ports:
+      - "2023:9999"
+    volumes:
+      - "./flag/flag.txt:/home/ctf/flag.txt:ro"

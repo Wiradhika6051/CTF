@@ -14,6 +14,7 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
 - Cryptography
   - [X] [Mod 26](Crypthography/Mod%2026.md)
   - [X] [Mind your Ps and Qs](Crypthography/Mind%20your%20Ps%20and%20Qs.md)
+  - [X] [Easy Peasy](Crypthography/Easy%20Peasy.md)
 - Web Exploitation
   - [X] [GET aHEAD](Web%20Exploitation/GET%20aHEAD.md)
   - [X] [Inspect HTML](Web%20Exploitation/Inspect%20HTML.md)
@@ -31,6 +32,11 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [Transformation](Reverse%20Engineering/Transformation.md)
   - [X] [keygenme-py](Reverse%20Engineering/keygenme-py.md)
   - [X] [crackme-py](Reverse%20Engineering/crackme-py.md)
+  - [X] [tunn3l_v1s10n](Forensics/tunn3l%20v1s10n.md)
+- Reverse Engineering
+  - [X] [Transformation](Reverse%20Engineering/Transformation.md)
+  - [X] [keygenme-py](Reverse%20Engineering/keygenme-py.md)
+  - [X] [ARMssembly 0](Reverse%20Engineering/ARMssembly%200.md)
 - Binary Exploitation
   - [X] [Stonks](Binary%20Exploitation/Stonks.md)
 
