@@ -12,6 +12,7 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [Magikarp Ground Mission](General/Magikarp%20Ground%20Mission.md)
   - [X] [Lets Warm Up](General/Lets%20Warm%20Up.md)
   - [X] [Warmed Up](General/Warmed%20Up.md)
+  - [X] [2Warm](General/2Warm.md)
 - Cryptography
   - [X] [Mod 26](Crypthography/Mod%2026.md)
   - [X] [Mind your Ps and Qs](Crypthography/Mind%20your%20Ps%20and%20Qs.md)
