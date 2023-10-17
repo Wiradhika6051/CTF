@@ -14,7 +14,7 @@ Artifact Files:
 -
 
 ### Approach
-**1. Analisi Respons**  
+**1. Analisis Respons**  
 Langsung saja kita lihat ada apa sih di ```mercury.picoctf.net:28067```
 ![result](images/speeds%20and%20feeds-2.JPG)
 Ada sebuah daftar perintah misterius disini. Sebelum kita cari tahu ini apaan, kita simpan dulu di lokal dengan perintah:
