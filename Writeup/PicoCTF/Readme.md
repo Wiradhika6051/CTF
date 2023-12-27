@@ -40,6 +40,7 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [ARMssembly 0](Reverse%20Engineering/ARMssembly%200.md)
   - [X] [vault-door-training](Reverse%20Engineering/vault-door-training.md)
   - [X] [speeds and feeds](Reverse%20Engineering/speeds%20and%20feeds.md)
+  - [X] [Shop](Reverse%20Engineering/Shop.md)
 - Binary Exploitation
   - [X] [Stonks](Binary%20Exploitation/Stonks.md)
 
