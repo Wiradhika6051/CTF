@@ -33,6 +33,7 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [tunn3l v1s10n](Forensics/tunn3l%20v1s10n.md)
   - [X] [Glory of the Garden](Forensics/Glory%20of%20the%20Garden.md)
   - [X] [Wireshark doo dooo do doo...](Forensics/Wireshark%20doo%20dooo%20do%20doo....md)
+  - [X] [MacroHard WeakEdge](Forensics/MacroHard%20WeakEdge.md)
 - Reverse Engineering
   - [X] [Transformation](Reverse%20Engineering/Transformation.md)
   - [X] [keygenme-py](Reverse%20Engineering/keygenme-py.md)
