@@ -18,6 +18,7 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [Mind your Ps and Qs](Crypthography/Mind%20your%20Ps%20and%20Qs.md)
   - [X] [Easy Peasy](Crypthography/Easy%20Peasy.md)
   - [X] [The Numbers](Crypthography/The%20Numbers.md)
+  - [X] [New Caesar](Crypthography/New%20Caesar.md)
 - Web Exploitation
   - [X] [GET aHEAD](Web%20Exploitation/GET%20aHEAD.md)
   - [X] [Inspect HTML](Web%20Exploitation/Inspect%20HTML.md)
