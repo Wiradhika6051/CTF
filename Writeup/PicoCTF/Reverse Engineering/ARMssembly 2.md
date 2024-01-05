@@ -101,7 +101,7 @@ picoCTF{4d9072bf}
 
 ### Reflections
 
-Eksplorasi lebih mendalam tentang assembly ARM serta belajar tentang operator **bcc**.
+Eksplorasi lebih mendalam tentang assembly ARM serta belajar tentang operator **bcc** dan _loops_.
 
 ---
 [Back to home](../Readme.md)
