@@ -44,6 +44,7 @@ Writeups for Pico CTF: [Pico CTF](https://picoctf.org/)
   - [X] [speeds and feeds](Reverse%20Engineering/speeds%20and%20feeds.md)
   - [X] [Shop](Reverse%20Engineering/Shop.md)
   - [X] [ARMssembly 1](Reverse%20Engineering/ARMssembly%201.md)
+  - [X] [ARMssembly 2](Reverse%20Engineering/ARMssembly%202.md)
 - Binary Exploitation
   - [X] [Stonks](Binary%20Exploitation/Stonks.md)
 
