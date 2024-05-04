@@ -15,9 +15,6 @@ Artifact Files:
 
 ### Approach
 
-//return angka terbesar
-//karena 4110761777 lebih besar dari 4004594377, maka return 4110761777 atau 0xF5053F31 dalam hex
-
 **1. Sekilas Tentang ARM Assembly**
 
 Karena di soal ada baris seperti ini:

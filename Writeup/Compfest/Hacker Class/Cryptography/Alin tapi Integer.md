@@ -1,9 +1,9 @@
 ## Challenge Name: Alin tapi Integer
 >Category: Cryptography
 
->Points: 
+>Points: - 
 
->Solves: 
+>Solves: -
 
 ### Challenge Description: 
 
@@ -19,9 +19,11 @@ Artifact Files:
 
 ### Approach
 
-**1. Analyze the file**
+**0. DISCLAIMER**  
+Ku sebenarnya gak kelar challenge ini, tapi penasaran cara ngerjainnya. Akhirnya ku ikutinlah pembahasan resmi dari panitia. Dari pemabahasan ini, ada link menuju materi dasar tentang konsep [ini](https://www.cryptool.org/download/ctb/CTB-Chapter_Lattice-Introduction_en.pdf) serta video contoh cara menyelesaikan problem [sejenis](https://www.youtube.com/watch?v=g6EruH_29ew).
 
-**2. Craft Payload and Get the Flag**
+**2. Analyze the Problem**  
+Jadi di problem ini, ada
 
 ### Reflections
 
